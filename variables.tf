@@ -11,3 +11,21 @@ variable "vpc_name" {
     description = "Nome da VPC"
     default = "dev"
 }
+
+variable "cidr_network_bits"  {
+    default = "8"
+}
+
+variable "subnet_count" {
+    default = "2"
+}
+
+variable "azs" {
+    default = {
+        "us-east-1" = "us-east-1a, us-east-1b"
+    }
+}
+
+variable "key_name" {
+    default = "Mykey"
+}
